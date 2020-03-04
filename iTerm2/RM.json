@@ -1,6 +1,6 @@
 {
   "Working Directory" : "\/Users\/roywalker",
-  "Prompt Before Closing 2" : false,
+  "Prompt Before Closing 2" : 0,
   "Selected Text Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
@@ -21,6 +21,7 @@
     "Green Component" : 0.88235294117647056
   },
   "Right Option Key Sends" : 0,
+  "Show Status Bar" : false,
   "Character Encoding" : 4,
   "Selection Color" : {
     "Red Component" : 0.806915283203125,
@@ -41,7 +42,7 @@
   "Sync Title" : false,
   "Disable Window Resizing" : true,
   "Description" : "Default",
-  "Close Sessions On End" : true,
+  "Close Sessions On End" : 1,
   "Jobs to Ignore" : [
     "rlogin",
     "ssh",
@@ -49,6 +50,15 @@
     "telnet"
   ],
   "Scrollback Lines" : 1000,
+  "Status Bar Layout" : {
+    "components" : [
+
+    ],
+    "advanced configuration" : {
+      "font" : ".AppleSystemUIFont 12",
+      "algorithm" : 0
+    }
+  },
   "Hide After Opening" : false,
   "Brighten Bold Text" : false,
   "Flashing Bell" : false,
@@ -242,13 +252,13 @@
       "Action" : 10,
       "Text" : "[19;2~"
     },
-    "0xf702-0x240000" : {
-      "Action" : 10,
-      "Text" : "[1;5D"
-    },
     "0x9-0x40000" : {
       "Text" : "",
       "Action" : 0
+    },
+    "0xf702-0x240000" : {
+      "Action" : 10,
+      "Text" : "[1;5D"
     }
   },
   "Ansi 14 Color" : {
