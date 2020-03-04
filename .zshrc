@@ -102,3 +102,4 @@ alias pip="/usr/local/bin/pip3"
 
 # fixes hyper empty line bug
 unsetopt PROMPT_SP
+bindkey '^[[[SE' autosuggest-accept
