@@ -1,15 +1,19 @@
-" Comments in Vimscript start with a `"`.
+" Vundle setup starts
+set nocompatible 
+filetype off
 
-" If you open this file in Vim, it'll be syntax highlighted for you.
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" Vim is based on Vi. Setting `nocompatible` switches from the default
-" Vi-compatibility mode and enables useful Vim functionality. This
-" configuration option turns out not to be necessary for the file named
-" '~/.vimrc', because Vim automatically enters nocompatible mode if that file
-" is present. But we're including it here just in case this config file is
-" loaded some other way (e.g. saved as `foo`, and then Vim started with
-" `vim -u foo`).
-set nocompatible
+Plugin 'VundleVim/Vundle.vim' " required
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'joshdick/onedark.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" /Vundle setup
 
 " Turn on syntax highlighting.
 syntax on
@@ -20,12 +24,7 @@ set shortmess+=I
 " Show line numbers.
 set number
 
-" This enables relative line numbering mode. With both number and
-" relativenumber enabled, the current line shows the true line number, while
-" all other lines (above and below) are numbered relative to the current line.
-" This is useful because you can tell, at a glance, what count is needed to
-" jump up or down to a particular line, by {count}k to go up or {count}j to go
-" down.
+" Show relative line numbers
 set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
@@ -81,3 +80,8 @@ inoremap ∆ <Esc>:m .+1<CR>==gi
 inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
+
+let g:onedark_color_overrides = {
+\ "black": {"gui": "#1c1c1c", "cterm": "233", "cterm16": "0" }
+\}
+colorscheme onedark
