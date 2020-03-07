@@ -12,12 +12,22 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>DarkThemeHasBlackTitlebar</key>
+	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>65CB4C3D-15AF-42C6-AA45-0C8D87DE50CE</string>
+	<key>DimBackgroundWindows</key>
+	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>EnableDivisionView</key>
 	<true/>
+	<key>ExtraSpaceBeforeCompactTopTabBar</key>
+	<real>0.0</real>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideActivityIndicator</key>
@@ -88,7 +98,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>419 441 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1000 357 664 630 0 0 1680 1027 </string>
+	<string>992 300 681 666 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -103,13 +113,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.15686274509803921</real>
+				<real>0.070588235294117646</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.14901960784313725</real>
+				<real>0.070588235294117646</real>
 				<key>Red Component</key>
-				<real>0.13725490196078433</real>
+				<real>0.070588235294117646</real>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
@@ -155,13 +165,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.8107147216796875</real>
+				<real>0.96078431372549022</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.55255416784872546</real>
+				<real>0.65098039215686276</real>
 				<key>Red Component</key>
-				<real>0.29892274654111389</real>
+				<real>0.35294117647058826</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
@@ -181,13 +191,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.4679412841796875</real>
+				<real>0.46666666666666667</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.45867511865701383</real>
+				<real>0.45490196078431372</real>
 				<key>Red Component</key>
-				<real>0.4100277571345104</real>
+				<real>0.40784313725490196</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -233,13 +243,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.70196078431372544</real>
+				<real>0.963165283203125</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.47843137254901963</real>
+				<real>0.6545783478079491</real>
 				<key>Red Component</key>
-				<real>0.25882352941176473</real>
+				<real>0.35534253166717239</real>
 			</dict>
 			<key>Ansi 5 Color</key>
 			<dict>
@@ -272,13 +282,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.81568627450980391</real>
+				<real>0.85490196078431369</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.83529411764705885</real>
+				<real>0.85490196078431369</real>
 				<key>Red Component</key>
-				<real>0.83529411764705885</real>
+				<real>0.85490196078431369</real>
 			</dict>
 			<key>Ansi 8 Color</key>
 			<dict>
@@ -313,13 +323,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.090196078431372548</real>
+				<real>0.070588235294117646</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.090196078431372548</real>
+				<real>0.070588235294117646</real>
 				<key>Red Component</key>
-				<real>0.090196078431372548</real>
+				<real>0.070588235294117646</real>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -343,7 +353,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>25.268244368654823</real>
+			<real>30</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -370,13 +380,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.80000000000000004</real>
+				<real>0.85490196078431369</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.80000000000000004</real>
+				<real>0.85490196078431369</real>
 				<key>Red Component</key>
-				<real>0.80000000000000004</real>
+				<real>0.85490196078431369</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -425,13 +435,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.80000000000000004</real>
+				<real>0.85490196078431369</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.80000000000000004</real>
+				<real>0.85490196078431369</real>
 				<key>Red Component</key>
-				<real>0.80000000000000004</real>
+				<real>0.85490196078431369</real>
 			</dict>
 			<key>Guid</key>
 			<string>65CB4C3D-15AF-42C6-AA45-0C8D87DE50CE</string>
@@ -516,6 +526,34 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
+				</dict>
+				<key>0x64-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>8</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x6a-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>6</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x6b-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>7</integer>
+					<key>Text</key>
+					<string></string>
+				</dict>
+				<key>0x75-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>9</integer>
+					<key>Text</key>
+					<string></string>
 				</dict>
 				<key>0x9-0x40000</key>
 				<dict>
@@ -815,13 +853,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.8100738525390625</real>
+				<real>0.80784313725490198</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.80599915465788874</real>
+				<real>0.80392156862745101</real>
 				<key>Red Component</key>
-				<real>0.40464138239622116</real>
+				<real>0.40392156862745099</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -867,7 +905,7 @@
 			<key>Thin Strokes</key>
 			<integer>4</integer>
 			<key>Transparency</key>
-			<real>0.052966370558375636</real>
+			<real>0.060247461928934008</real>
 			<key>Underline Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -915,22 +953,22 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>Meslo LG L for Powerline</string>
+		<string>Menlo</string>
 		<string>Meslo LG S for Powerline</string>
 		<string>Meslo LG M for Powerline</string>
-		<string>Meslo LG S DZ for Powerline</string>
-		<string>Meslo LG M DZ for Powerline</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{6, 1027}</string>
+		<string>{136, 940}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>2C0EBD85-AB99-4376-A179-4C52A592CD89</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>57</integer>
+	<integer>73</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1720,15 +1758,23 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-06T11:12:14Z</date>
+	<date>2020-03-07T11:12:15Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>SeparateWindowTitlePerTab</key>
 	<true/>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
+	<key>ShowPaneTitles</key>
+	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.59999999999999998</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
@@ -1740,9 +1786,11 @@
 	<key>TabsHaveCloseButton</key>
 	<true/>
 	<key>TerminalMargin</key>
-	<integer>17</integer>
+	<integer>15</integer>
 	<key>TerminalVMargin</key>
-	<integer>16</integer>
+	<integer>10</integer>
+	<key>TmuxVariableWindowSizesSupported</key>
+	<false/>
 	<key>UseBorder</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
