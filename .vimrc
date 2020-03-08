@@ -1,8 +1,8 @@
-" Vundle setup starts
+" <Vundle>
 set nocompatible 
 filetype off
 
-" set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize.
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -13,7 +13,7 @@ Plugin 'joshdick/onedark.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-" /Vundle setup
+" </Vundle>
 
 " Turn on syntax highlighting.
 syntax on
@@ -24,56 +24,47 @@ set shortmess+=I
 " Show line numbers.
 set number
 
-" Show relative line numbers
+" Show relative line numbers.
 set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
 
-" The backspace key has slightly unintuitive behavior by default. For example,
-" by default, you can't backspace before the insertion point set with 'i'.
-" This configuration makes backspace behave more reasonably, in that you can
-" backspace over anything.
+" Upgrade backspace behavior
 set backspace=indent,eol,start
 
-" By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
-" shown in any window) that has unsaved changes. This is to prevent you from "
-" forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
-" hidden buffers helpful enough to disable this protection. See `:help hidden`
-" for more information on this.
+" Allow unsaved changes in inactive buffers.
 set hidden
 
-" This setting makes search case-insensitive when all characters in the string
-" being searched are lowercase. However, the search becomes case-sensitive if
-" it contains any capital letters. This makes searching more convenient.
+" Make search case insenstive, unless you type an uppercase character.
 set ignorecase
 set smartcase
 
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
 
-" Unbind some useless/annoying default key bindings.
-nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
+" Unbind some useless default key binding
+nmap Q <Nop>
 
-" Disable audible bell because it's annoying.
+" Disable audible bell
 set noerrorbells visualbell t_vb=
 
-" Enable mouse support. You should avoid relying on this too much, but it can
-" sometimes be convenient.
+" Enable mouse support
 set mouse+=a
 
 " Add shorcut for CtrlP plugin
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" CUSTOM MAPPINGS
-
 " Set column width
 set textwidth=72
+
+" Set tab settings
 set tabstop=2
 set softtabstop=2
 set et
 
+" Set binding for moving keys (cmd+j/k)
 nnoremap ∆ :m .+1<CR>==
 nnoremap ˚ :m .-2<CR>==
 inoremap ∆ <Esc>:m .+1<CR>==gi
@@ -81,6 +72,7 @@ inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
+" Set custom colors for Vim 'onedark' theme
 let g:onedark_color_overrides = {
 \ "black": {"gui": "#1c1c1c", "cterm": "233", "cterm16": "0" }
 \}
