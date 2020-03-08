@@ -1,4 +1,7 @@
-" <Vundle>
+" -------------
+" Vundle setup
+" -------------
+  
 set nocompatible 
 filetype off
 
@@ -13,56 +16,50 @@ Plugin 'joshdick/onedark.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-" </Vundle>
 
-" Turn on syntax highlighting.
-syntax on
+" ------------
+" Basic setup
+" ------------
 
-" Disable the default Vim startup message.
-set shortmess+=I
-
-" Show line numbers.
-set number
-
-" Show relative line numbers.
-set relativenumber
-
-" Always show the status line at the bottom, even if you only have one window open.
-set laststatus=2
-
-" Upgrade backspace behavior
-set backspace=indent,eol,start
-
-" Allow unsaved changes in inactive buffers.
-set hidden
-
-" Make search case insenstive, unless you type an uppercase character.
-set ignorecase
+syntax on " Turn on syntax highlighting.
+set showmatch " show matching braces when text indicator is over them
+set shortmess+=I " Disable the default Vim startup message.
+set autoindent
+set number " Show line numbers.
+set relativenumber " Show relative line numbers.
+set laststatus=2 " Always show the status line, even if you only have one window open.
+set backspace=indent,eol,start " Upgrade backspace behavior
+set hidden " Allow unsaved changes in inactive buffers.
+set ignorecase " Make search case insenstive, unless you type an uppercase character.
 set smartcase
+set incsearch " Enable search as you type, rather than waiting till you press enter.
+set noerrorbells visualbell t_vb= " Disable audible bell
+set mouse+=a " Enable mouse support
+set textwidth=72 " Set column width
+set tabstop=2 " Set tab settings
+set softtabstop=2
+set et
 
-" Enable searching as you type, rather than waiting till you press enter.
-set incsearch
+" highlight current line, but only in active window
+augroup CursorLineOnlyInActiveWindow
+        autocmd!
+        autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+        autocmd WinLeave * setlocal nocursorline
+augroup END
 
-" Unbind some useless default key binding
-nmap Q <Nop>
+ " open split paanes to the right and bottom
+set splitbelow
+set splitright
 
-" Disable audible bell
-set noerrorbells visualbell t_vb=
+" ----------
+"  Bindings
+"  ---------
 
-" Enable mouse support
-set mouse+=a
+nmap Q <Nop> 
 
 " Add shorcut for CtrlP plugin
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-
-" Set column width
-set textwidth=72
-
-" Set tab settings
-set tabstop=2
-set softtabstop=2
-set et
 
 " Set binding for moving keys (cmd+j/k)
 nnoremap ∆ :m .+1<CR>==
@@ -72,8 +69,19 @@ inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" --------
+"  Others
+" --------
+
 " Set custom colors for Vim 'onedark' theme
 let g:onedark_color_overrides = {
 \ "black": {"gui": "#1c1c1c", "cterm": "233", "cterm16": "0" }
 \}
+
 colorscheme onedark
