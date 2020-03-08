@@ -98,7 +98,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>419 441 841 470 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>992 300 681 666 0 0 1680 1027 </string>
+	<string>992 348 660 618 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -824,7 +824,7 @@
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -968,7 +968,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>2C0EBD85-AB99-4376-A179-4C52A592CD89</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>73</integer>
+	<integer>75</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
