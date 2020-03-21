@@ -1,7 +1,7 @@
 " -------------
 " Vundle setup
 " -------------
-  
+
 set nocompatible 
 filetype off
 
@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim' " required
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'joshdick/onedark.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -38,16 +39,17 @@ set mouse+=a " Enable mouse support
 set textwidth=72 " Set column width
 set tabstop=2 " Set tab settings
 set softtabstop=2
-set et
+set shiftwidth=2
+set expandtab
 
 " highlight current line, but only in active window
 augroup CursorLineOnlyInActiveWindow
-        autocmd!
-        autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-        autocmd WinLeave * setlocal nocursorline
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
 augroup END
 
- " open split paanes to the right and bottom
+" open split paanes to the right and bottom
 set splitbelow
 set splitright
 
@@ -85,3 +87,10 @@ let g:onedark_color_overrides = {
 \}
 
 colorscheme onedark
+
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=232
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  guibg=red   ctermbg=234
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+let g:indet_guides_start_level = 0
