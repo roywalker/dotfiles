@@ -5,6 +5,7 @@
 	unstage = reset HEAD --
   last = log -1 -p HEAD
   h = log --oneline --decorate --graph --all
+  zip = archive HEAD -o
 [core]
 	excludesfile = /Users/roywalker/.gitignore_global
 	editor = /usr/bin/vim
