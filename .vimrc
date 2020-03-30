@@ -90,7 +90,7 @@ colorscheme onedark
 
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=232
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  guibg=red   ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  guibg=red   ctermbg=232
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indet_guides_start_level = 0
