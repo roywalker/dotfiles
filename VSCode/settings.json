@@ -1,0 +1,157 @@
+{
+    "editor.fontSize": 12,
+    "editor.fontFamily": "'Meslo LG M For Powerline', Monaco, 'Courier New', monospace",
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "workbench.fontAliasing": "auto",
+    "eslint.alwaysShowStatus": true,
+    "editor.scrollBeyondLastLine": false,
+    "emmet.triggerExpansionOnTab": true,
+    "breadcrumbs.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDragAndDrop": false,
+    "prettier.requireConfig": true,
+    "editor.formatOnSave": true,
+    "explorer.openEditors.visible": 0,
+    "files.associations": {
+        "*.react": "javascriptreact",
+        "*.js": "javascriptreact"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 0,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.advanced.messages": {
+        "suppressLineUncommittedWarning": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "underline",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorWidth": 2,
+    "editor.suggestSelection": "first",
+    "workbench.editor.showIcons": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorCustomizations": {
+        "sideBar.background": "#1a1a1a",
+        "sideBar.foreground": "#aaaaaa",
+        "activityBar.background": "#1a1a1a",
+        "editor.background": "#1a1a1a",
+        "editor.foreground": "#aab2c0",
+        "tab.activeBackground": "#1a1a1a",
+        "tab.inactiveBackground": "#1a1a1a",
+        "tab.inactiveModifiedBorder": "#0B0B0B",
+        "tab.inactiveForeground": "#777777",
+        "tab.hoverBackground": "#1a1a1a",
+        "tab.border": "#222525",
+        "editorIndentGuide.activeBackground": "#292929",
+        "editorIndentGuide.background": "#232323",
+        "editor.lineHighlightBackground": "#202020",
+        "editorLineNumber.foreground": "#555555",
+        "editorLineNumber.activeForeground": "#6B6B6B",
+        "editorCursor.foreground": "#dadada",
+        "editorCursor.background": "#1a1a1a",
+        "editor.selectionHighlightBorder": "#1a1a1a",
+        "editor.selectionHighlightBackground": "#333333",
+        "terminal.ansiBlack": "#121212",
+        "terminal.ansiBlue": "#5aa6f5",
+        "terminal.ansiBrightBlack": "#626566",
+        "terminal.ansiBrightBlue": "#5aa6f5",
+        "terminal.ansiBrightCyan": "#687477",
+        "terminal.ansiBrightGreen": "#c8ed71",
+        "terminal.ansiBrightMagenta": "#ae89fe",
+        "terminal.ansiBrightRed": "#ff7fac",
+        "terminal.ansiBrightWhite": "#f5f5f1",
+        "terminal.ansiBrightYellow": "#ebdf86",
+        "terminal.ansiCyan": "#75dff2",
+        "terminal.ansiGreen": "#00ca56",
+        "terminal.ansiMagenta": "#ae89fe",
+        "terminal.ansiRed": "#dd4c7f",
+        "terminal.ansiWhite": "#dadada",
+        "terminal.ansiYellow": "#ffbd4c",
+        "terminal.foreground": "#dadada",
+        "sideBarSectionHeader.background": "#1a1a1a",
+        "sideBarSectionHeader.foreground": "#444444",
+        "sideBarTitle.foreground": "#333",
+        "statusBar.background": "#8ed98e",
+        "statusBar.noFolderBackground": "#8ed98e",
+        "statusBar.debuggingBackground": "#8ed98e",
+        "statusBar.foreground": "#151515"
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.tokenColorCustomizations": {
+        "comments": {
+            "foreground": "#5e5f60",
+            "fontStyle": ""
+        },
+    },
+    "python.jediEnabled": false,
+    // VIM plugin settings
+    "vim.cursorStylePerMode.normal": "underline",
+    "vim.statusBarColorControl": false,
+    "vim.statusBarColors.visual": [
+        "#da6bda",
+        "#151515"
+    ],
+    "vim.statusBarColors.visualblock": [
+        "#da6bda",
+        "#151515"
+    ],
+    "vim.statusBarColors.visualline": [
+        "#da6bda",
+        "#151515"
+    ],
+    "vim.statusBarColors.replace": [
+        "#ff698e",
+        "#151515"
+    ],
+    "vim.statusBarColors.insert": [
+        "#29b3fe",
+        "#151515"
+    ],
+    "vim.statusBarColors.normal": [
+        "#8ed98e",
+        "#151515"
+    ],
+    "vim.statusBarColors.searchinprogressmode": [
+        "#8ed98e",
+        "#151515"
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "Z",
+                "Z"
+            ],
+            "commands": [
+                ":wq"
+            ]
+        }
+    ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+    ]
+}
