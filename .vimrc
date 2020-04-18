@@ -63,13 +63,13 @@ nmap Q <Nop>
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-" Set binding for moving keys (cmd+j/k)
-nnoremap ∆ :m .+1<CR>==
-nnoremap ˚ :m .-2<CR>==
-inoremap ∆ <Esc>:m .+1<CR>==gi
-inoremap ˚ <Esc>:m .-2<CR>==gi
-vnoremap ∆ :m '>+1<CR>gv=gv
-vnoremap ˚ :m '<-2<CR>gv=gv
+" Set binding for moving keys (option+shit+j/k)
+nnoremap Ô :m .+1<CR>==
+nnoremap  :m .-2<CR>==
+inoremap Ô <Esc>:m .+1<CR>==gi
+inoremap  <Esc>:m .-2<CR>==gi
+vnoremap Ô :m '>+1<CR>gv=gv
+vnoremap  :m '<-2<CR>gv=gv
 
 " quicker window movement
 nnoremap <C-j> <C-w>j
