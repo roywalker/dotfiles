@@ -9,3 +9,5 @@
 [core]
 	excludesfile = /Users/roywalker/.gitignore_global
 	editor = /usr/bin/vim
+[hub]
+	protocol = SSH
