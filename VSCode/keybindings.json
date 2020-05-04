@@ -74,43 +74,28 @@
     "command": "-workbench.action.moveEditorRightInGroup"
   },
   {
-    "key": "alt+j",
+    "key": "ctrl+j",
     "command": "workbench.action.terminal.scrollDown",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+cmd+pagedown",
-    "command": "-workbench.action.terminal.scrollDown",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+k",
+    "key": "ctrl+k",
     "command": "workbench.action.terminal.scrollUp",
     "when": "terminalFocus"
   },
   {
-    "key": "alt+cmd+pageup",
-    "command": "-workbench.action.terminal.scrollUp",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+d",
+    "key": "ctrl+d",
     "command": "workbench.action.terminal.scrollDownPage",
     "when": "terminalFocus"
   },
   {
-    "key": "pagedown",
-    "command": "-workbench.action.terminal.scrollDownPage",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+u",
+    "key": "ctrl+u",
     "command": "workbench.action.terminal.scrollUpPage",
     "when": "terminalFocus"
   },
   {
-    "key": "pageup",
-    "command": "-workbench.action.terminal.scrollUpPage",
+    "key": "cmd+shift+t",
+    "command": "workbench.action.quickOpenTerm",
     "when": "terminalFocus"
   }
 ]

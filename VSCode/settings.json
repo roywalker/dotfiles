@@ -4,10 +4,9 @@
     "editor.wordWrap": "on",
     "editor.tabSize": 2,
     "workbench.fontAliasing": "auto",
-    "eslint.alwaysShowStatus": true,
     "editor.scrollBeyondLastLine": false,
     "emmet.triggerExpansionOnTab": true,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "liveServer.settings.donotShowInfoMsg": true,
     "explorer.confirmDragAndDrop": false,
     "prettier.requireConfig": true,
@@ -25,9 +24,17 @@
     "gitlens.advanced.messages": {
         "suppressLineUncommittedWarning": true
     },
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
+    // "editor.codeActionsOnSave": {
+    //     "source.fixAll.eslint": true
+    // },
+    "eslint.alwaysShowStatus": true,
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "eslint.trace.server": "messages",
+    "eslint.lintTask.enable": true,
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "underline",
@@ -92,7 +99,11 @@
     },
     "python.jediEnabled": false,
     // VIM plugin settings
-    "vim.cursorStylePerMode.normal": "underline",
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.insert": "underline",
     "vim.statusBarColorControl": false,
     "vim.statusBarColors.visual": [
         "#da6bda",
