@@ -82,6 +82,7 @@
         "terminal.ansiWhite": "#dadada",
         "terminal.ansiYellow": "#ffbd4c",
         "terminal.foreground": "#dadada",
+        "terminal.background": "#1a1a1a",
         "sideBarSectionHeader.background": "#1a1a1a",
         "sideBarSectionHeader.foreground": "#444444",
         "sideBarTitle.foreground": "#333",
@@ -164,5 +165,6 @@
                 "editor.action.outdentLines"
             ]
         },
-    ]
+    ],
+    "workbench.sideBar.location": "left"
 }
